@@ -1,3 +1,8 @@
+This is the EDC website
+Developed by -Anurag Chaurasia Department of Computer Science And Technology,IIEST Shibpur
+Design credits- Rohan Das Department of Aerospace and Applied Mechanics,IIEST Shibpur
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
