@@ -6,11 +6,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 import styles from "./Carousel.module.css";
 
 // import required modules
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 export default function Carousel() {
   return (
@@ -18,11 +19,28 @@ export default function Carousel() {
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
+        navigation={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        modules={[Pagination, Navigation, Autoplay]}
         className={styles.mySwiper}
+        breakpoints={{
+          0:{
+            slidesPerView:1,
+          },
+          520:{
+            slidesPerView:2,
+          },
+          950:{
+            slidesPerView:3,
+          }
+        }}
+        
       >
         <SwiperSlide className={styles.swiperslide}>
           <img src="./initative/i1.jpg" alt="" className={styles.img} />

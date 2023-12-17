@@ -16,6 +16,7 @@ const Ourteam = () => {
           );
         })}
       </div>
+      <button className={styles.button}>Explore</button>
     </div>
   );
 };

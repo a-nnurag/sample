@@ -8,10 +8,10 @@ const Footer = () => {
     <div className={styles.body}>
       <div className={styles.upper}>
         <div className={styles.icons}>
-          <Link href="/">
+          <Link href="/" className={styles.icon}>
             <Image src="/facebook.png" height={64} width={64} alt="facebook" />
           </Link>
-          <Link href="/">
+          <Link href="/" className={styles.icon}>
             <Image
               src="/instagram.png"
               height={64}
@@ -19,10 +19,10 @@ const Footer = () => {
               alt="instagram"
             />
           </Link>
-          <Link href="/">
+          <Link href="/" className={styles.icon}>
             <Image src="/linkedin.png" height={64} width={64} alt="linkedin" />
           </Link>
-          <Link href="/">
+          <Link href="/" className={styles.icon}>
             <Image src="/twitter.png" height={64} width={64} alt="twitter" />
           </Link>
         </div>
@@ -37,31 +37,34 @@ const Footer = () => {
       <div className={styles.lower}>
         <div className={styles.row}>
           <header className={styles.header}>Reach us</header>
-          <Link href="/">
+          <Link href="/" className={styles.link}>
             <Image
               src="/bxs_phone-call.svg"
               height={24}
               width={24}
               alt="phone"
             />
-            <span className={styles.link}>123456789</span>
+            <span>123456789</span>
           </Link>
-          <Link href="/">
+          <Link href="/" className={styles.link}>
             <Image
               src="/ic_sharp-email.svg"
               height={24}
               width={24}
               alt="email"
             />
-            <span className={styles.link}>asc15.lko@gmail.com</span>
+            <span>asc15.lko@gmail.com</span>
           </Link>
-          <Link href="/">
+          <Link href="/" className={styles.link}>
             <Image
               src="/carbon_location-filled.svg"
               height={24}
               width={24}
               alt="email"
             />
+            <span className={styles.address}>
+              INDIAN INSTITUTE OF ENGINEERING SCIENCE AND TECHNOLGY
+            </span>
           </Link>
         </div>
         <div className={styles.row}>
